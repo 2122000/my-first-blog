@@ -1,10 +1,25 @@
+{% load staticfiles %}
 <html>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Sacramento" rel="stylesheet">
+<style>
+body{text-align: center; }
+h1 a {font-family: 'Amatic SC', cursive;
+      font-size:50px;
+      color: #0000;}
+p{font-family: 'Open Sans Condensed', sans-serif;
+  font-size:20px;
+}
+</style>
     <head>
-        <title>Django Girls blog</title>
+      <title>Michelle's  blog</title>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
+
     <body>
       <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <h1><a href="/">Michelle's Blog</a></h1>
       </div>
 
       {% for post in posts %}
